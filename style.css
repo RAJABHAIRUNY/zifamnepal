@@ -727,21 +727,22 @@ span{
     width: 100%;
     height: auto;
     position: relative;
+    color: darkblue;
 
 }
-/*
-.about-zifam{
-    color: darkblue;
-    font-size: 15px; 
-    text-align: justify;
-    padding: 10px 50px;
-    line-height: 25px;
-}
-*/
+
    h1{
     color: darkblue;
     text-align: center;
-    margin: 5px 0;
+    
+}
+
+
+.about-zifam p{
+    font-size: 13px;
+    padding: 10px;
+    text-align: justify;
+    line-height: 1.5;
 }
     
     
@@ -752,7 +753,7 @@ span{
         font-size: 17px;
         color: darkblue;
         text-align: center;
-        margin: 5px 0;
+    
     }
 
     .about-zifam p{
@@ -768,7 +769,7 @@ span{
 /*rating*/
 
 .stars {
-    margin: 40px 10px;
+    margin: 40px 0px;
     width: 100%;
     align-items: center;
     text-align: center;
