@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="iamge.css"></link>
+
+    
+    <title>Zifam Nepal</title>
+    <link rel="icon" href="img.gallery/zifam.jpeg" type="image/jpg">
+
+</head>
+<body>
+    
+    <div class="full-img" id="fullimgbox">
+        <img src="img.gallery/1000d.jpeg" id="fullimg">
+        <span onclick="closefullimg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="img.gallery/aminoxl.jpeg" onclick="openfullimg(this.src)">
+        <img src="img.gallery/eposoft.jpeg" onclick="openfullimg(this.src)">
+        <img src="img.gallery/menofem..jpg" onclick="openfullimg(this.src)">
+        <img src="img.gallery/natocare.jpeg" onclick="openfullimg(this.src)">
+        <img src="img.gallery/solomega.jpeg" onclick="openfullimg(this.src)">
+        <img src="img.gallery/supravit.jpeg" onclick="openfullimg(this.src)">
+        <img src="img.gallery/ziq.jpg" onclick="openfullimg(this.src)">
+        <img src="img.gallery/ziliv.jpeg" onclick="openfullimg(this.src)">
+        <img src="img.gallery/protec.jpeg" onclick="openfullimg(this.src)">
+
+        
+        
+    </div>
+    
+    <script>
+        var fullimgbox = document.getElementById("fullimgbox");
+        var fullimg = document.getElementById("fullimg");
+
+        function openfullimg(pic){
+        fullimgbox.style.display = "flex";
+        fullimg.src = pic;
+        }
+        function closefullimg(){
+            fullimgbox.style.display = "none";
+
+        }
+    </script>
+
+
+
+</body>
+</html>
