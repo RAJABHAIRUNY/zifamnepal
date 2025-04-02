@@ -528,12 +528,12 @@ html {
 .welcome {
     width: 100%;
     display: block;
-    text-align: center;
     margin-bottom: 0%;
     color: blueviolet;
     padding: 5px 5px ;
     background-color: whitesmoke;
     word-spacing: 5px;
+    text-align: center;
     
 }
 
@@ -551,6 +551,7 @@ html {
     line-height: 20PX;
     margin: auto;
     padding: 5PX 5PX;
+    text-align: justify;
     
 }
 
@@ -560,6 +561,7 @@ html {
     border: 1px solid black;
     border-radius: 5px;
     text-decoration: none;
+    
     color: white;
     padding: 3px 5px ;
     margin-top: 15px;
@@ -653,7 +655,7 @@ html {
 .card-container .box-container .box p{
     color: darkblue;
     font-size: 13px;
-    padding: 8px 15px;
+
     line-height: 1.5;
     text-align: justify;
 
@@ -703,7 +705,6 @@ span{
 .card-container .box-container .box p{
     color: darkblue;
     font-size: 13px;
-    padding: 8px 35px;
     line-height: 1.5;
 
 }
@@ -721,24 +722,22 @@ span{
 /*about_gosainkunda_4th_pages*/
 
 
-.about-gosaikunda, .about_bathrog{
+.about-zifam{
     text-align: center;
     width: 100%;
     height: auto;
-    margin:  5px;
-    padding:  5px ;
     position: relative;
 
 }
-
-.about-gosaikunda, .about_bathrog  p{
+/*
+.about-zifam{
     color: darkblue;
     font-size: 15px; 
     text-align: justify;
     padding: 10px 50px;
     line-height: 25px;
 }
-
+*/
    h1{
     color: darkblue;
     text-align: center;
@@ -749,47 +748,21 @@ span{
 
 @media (max-width: 768px){
 
-    .about-gosaikunda h1{
+    .about-zifam h1{
         font-size: 17px;
         color: darkblue;
         text-align: center;
         margin: 5px 0;
     }
 
-    .about-gosaikunda p{
+    .about-zifam p{
         font-size: 13px;
-    }
-
-    .about_bathrog h1{
-        font-size: 17px;
-        color: darkblue;
-        text-align: center;
-        margin: 5px 0;
-    }
-
-    .about_bathrog p{
-        font-size: 13px;
+        padding: 10px;
+        text-align: justify;
     }
 
 
-
-
-    /*.about-gosaikunda, .about_bathrog  p{
-        color: darkblue;
-        font-size: 12px; 
-        padding: 5px;
-    }
-
-*/
 }
-
-
-
-
-
-
-
-
 
 
 /*rating*/
@@ -822,7 +795,7 @@ span{
     color: darkblue;
 }
 
-
+/*
 
 .about_bathrog span{
     font-size: 14px;
@@ -872,7 +845,7 @@ float: right;
 
 /*--Our services*/
 .main_scroll {
-    margin: 80px 40px;
+   /* margin: 80px 40px; */
     display: grid;
     column-gap: 40px;
     grid-template-columns: repeat(auto-fit, minmax(360px, 2fr));
