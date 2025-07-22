@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!----for search functions-->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+<!----phone-call-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
     
 
     <link rel="stylesheet" href="style.css">
@@ -65,7 +71,8 @@
 
 
         <a href="#" class="to-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-        <a href="tel:+977-01-5447184" class="phone-call"><i class="fa-solid fa-phone"></i> </a>
+
+        <a href="tel:+977-01-5447184" class="phone-call"  onclick="handlePhoneCall(event)"><i class="fa-solid fa-phone"></i> </a>
       
     
 
@@ -144,7 +151,7 @@
    
             </p>
         </div>
-   
+   <!-------
    
          <div class="box">
            <img src="images/zifam.jpeg">
@@ -169,7 +176,7 @@
              </p>
          </div>
    
-   
+   ------>
    
         </div>
    </div>
@@ -570,6 +577,8 @@ Meeting
 </div>
 <!-----gallery --images-->
 
+
+
 <div class="gallery-main" id="fullimgbox">
   <img src="images/backpain.jpg" id="fullimg">
   <span onclick="closefullimg()">X</span>
@@ -581,6 +590,7 @@ Meeting
   <img src="images/austria2.jpeg" onclick="openfullimg(this.src)">
   <img src="images/homeimage1.jpeg" onclick="openfullimg(this.src)">
 </div>
+
   <div class="gallery-img" id="more-images"  style="display: none;">
     
     <img src="images/homeimage1.jpeg" onclick="openfullimg(this.src)">
@@ -600,11 +610,6 @@ Meeting
    
    
   </div>
-
- <!--- <button class="more_less" id="toggle-btn" onclick="toggleImages()">Show More</button>
---
-
-</div> -->
 
 <button class="more_less" id="toggle-btn" onclick="toggleImages()">Show More</button>
 

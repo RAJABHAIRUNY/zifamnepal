@@ -164,7 +164,7 @@ hr{
         text-align: center;
         line-height: 8px;
         padding: 0;
-        gap: 10px;
+        gap: 7px;
         top: 80px;
         z-index: 100;
         border-bottom-right-radius: 3px;
@@ -198,20 +198,6 @@ hr{
     
  }
 
- /*
-nav{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0%;
-    background-color: whitesmoke;
-    position: relative;
-    
-
-}
-*/
     nav {
         flex-direction: row;
         align-items: center;
@@ -221,29 +207,6 @@ nav{
 
     }
 
-   /* 
-    .search-bar {
-        width: 30%;
-        justify-content: center;
-        margin-top: 5px;
-    }
-
-    .search-bar input {
-        width: 30%;
-        padding: 5px;
-    }
-
-    .search-bar button {
-        padding: 5px;
-    }
-
-
-    */
-
-
-
-
-
 nav h1{
     font-size: 20px;
 
@@ -251,17 +214,47 @@ nav h1{
 
 }
 
-
-
-
-
-
 /*------navigation  system  for media screen end----*/
 
 
   /* ---- slider section---- */
 
-  
+.slideshow-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills without distortion */
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+  /*
 
 .slideshow-container {
     display: flex;
@@ -298,11 +291,23 @@ nav h1{
 }
 
 
+*/
 
+@media (max-width: 768px) {
+  .slides img {
+    object-position: center;
+  }
+}
+
+
+
+
+/*
 
 @media (max-width:768px){
     
 .slideshow-container {
+
     display: flex;
     flex-direction: column;
     width: 100%; 
@@ -343,7 +348,8 @@ nav h1{
     top: 20%;
     
 }
-}
+*/
+
 
 
 .prevp, .nextn {
@@ -443,7 +449,7 @@ nav h1{
 /*phone-call-icon */
 
 .phone-call{
-    color: #f5f7ef;
+    color: whitesmoke;
     background: darkblue;
     text-decoration: none;
     border: 3px solid;
@@ -461,9 +467,23 @@ nav h1{
     opacity: 1;
     pointer-events: all;
     transition: all 6s;
+     animation: glow 2s infinite ease-in-out;
+    
+/*
+animation: glow 1.1s infinite;
 
-    animation: glow 1.1s infinite;
+.glowing-wave {
+  animation: glowWave 2s infinite ease-in-out;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
 
+*/
     
 
 }
@@ -480,6 +500,42 @@ nav h1{
     }
   }
 */
+@keyframes glow {
+  0% {
+    box-shadow: 
+      0 0 3px rgb(79, 170, 239),
+      0 0 6px rgb(31, 136, 235);
+    transform: scale(1) translateY(0);
+  }
+
+  25% {
+    box-shadow: 
+      0 0 6px rgb(83, 121, 247),
+      0 0 9px rgb(12, 51, 170);
+    transform: scale(1.05) translateY(-2px);
+  }
+
+  50% {
+    box-shadow: 
+      0 0 9px rgb(12, 4, 60),
+      0 0 6px rgb(44, 50, 136);
+    transform: scale(1.1) translateY(2px);
+  }
+
+  75% {
+    box-shadow: 
+      0 0 6px rgb(172, 23, 213),
+      0 0 3px rgb(30, 1, 95);
+    transform: scale(1.05) translateY(-2px);
+  }
+
+  100% {
+    box-shadow: 
+      0 0 5px rgb(19, 1, 91),
+      0 0 10px rgb(3, 24, 78);
+    transform: scale(1) translateY(0);
+  }
+}
 
 
 
@@ -927,6 +983,8 @@ float: right;
 
 
 /* Styling for the full-size image viewer */
+
+
 .gallery-main {
  
 

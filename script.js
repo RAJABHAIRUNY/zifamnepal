@@ -142,29 +142,6 @@ function closefullimg(){
 
 }
 
-
-//rating
-
-
-
-//const stars = document.querySelectorAll('.stars input');
-//stars.forEach(star => {
-   // star.addEventListener('change', () => {
-     //   alert(`You rated ${star.value} stars!`);
-  //  });
-//});
-
-
-
-
-
-
-
-
-
-
-
-
   function toggleImages() {
     var moreImages = document.getElementById("more-images");
     var button = document.getElementById("toggle-btn");
@@ -175,18 +152,30 @@ function closefullimg(){
       moreImages.style.display = "none";
       button.textContent = "Show More";
     }
+  }
 
+function handlePhoneCall(e) {
+    // Check if the user is on mobile
+    const isMobile = /iPhone|iPad|Android|Mobile/i.test(navigator.userAgent);
 
-
-
-
-
-
-
+    if (!isMobile) {
+      e.preventDefault(); // Stop link behavior on desktop
+      alert("Dial this number: +977-01-5447184");
+    }
+    // If mobile, let the browser handle tel: link (do nothing)
   }
 
 
 
+
+
+
+
+
+//function showNumber(e) {
+   //// e.preventDefault();
+   // alert("Dial this number: +977-01-5447184");
+//}
 
 
 
