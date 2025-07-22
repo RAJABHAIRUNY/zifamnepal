@@ -217,6 +217,86 @@ nav h1{
 /*------navigation  system  for media screen end----*/
 
 
+.slideshow-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* 📱 Mobile Portrait */
+@media (max-width: 767px) and (orientation: portrait) {
+    .slideshow-container {
+        height: 80vh;
+    }
+    .slides img {
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+/* 📱 Mobile Landscape */
+@media (max-width: 767px) and (orientation: landscape) {
+    .slideshow-container {
+        height: 100vh;
+    }
+    .slides img {
+        object-fit: contain;
+        background-color: black;
+    }
+}
+
+/* 💻 Tablet Portrait */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .slideshow-container {
+        height: 90vh;
+    }
+    .slides img {
+        object-fit: cover;
+    }
+}
+
+/* 💻 Tablet Landscape */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .slideshow-container {
+        height: 100vh;
+    }
+    .slides img {
+        object-fit: contain;
+        background-color: black;
+    }
+}
+
+
+
+
+.slideshow-container {
+    aspect-ratio: 16 / 9;
+    max-height: 100vh;
+}
+
+
   /* ---- slider section---- */
 
 .slideshow-container {
@@ -256,6 +336,13 @@ nav h1{
 
   /*
 
+
+
+
+
+
+  
+
 .slideshow-container {
     display: flex;
     flex-direction: column;
@@ -291,7 +378,7 @@ nav h1{
 }
 
 
-*/
+*
 
 @media (max-width: 768px) {
   .slides img {
